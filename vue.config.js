@@ -3,5 +3,7 @@ module.exports = defineConfig({
   transpileDependencies: true,
   devServer: {
     host: 'localhost'
-  }
+  },
+  publicPath: process.env.NODE_ENV === "production" ? "/RyanVolkin.github.io/" : "/",
+
 })
